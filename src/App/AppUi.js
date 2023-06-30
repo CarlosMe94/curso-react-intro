@@ -8,6 +8,8 @@ import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoContext } from '../TodoContext';
+import { TodoForm } from '../TodoForm';
+
 import { Modal } from '../Modal';
 
 
@@ -52,8 +54,9 @@ function AppUI() {
       <CreateTodoButton setOpenModal={setOpenModal} />
 
 {openModal && (
+
   <Modal>
-  La funcionalidad de agreagar TODO
+    <TodoForm />
   </Modal>
 )}
       
